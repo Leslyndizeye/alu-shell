@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
-#This is for three tings 
-
-count=1
-
-
-while [ $count -le 10 ]
+# This is a script printing Best School and this
+count=0
+while [ $count -lt 10 ]
 do
-  if [ $count -eq 4 ]; then
-    echo "bad luck"
-  elif [ $count -eq 8 ]; then
-    echo "good luck"
+  
+  count=$((count + 1))
+
+  
+  if [ $count -eq 9 ]
+  then
+    echo "Best School"
+    echo "Hi"
   else
     echo "Best School"
   fi
-
-
-  count=$((count + 1))
 done
